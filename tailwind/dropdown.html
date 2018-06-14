@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+	<style>
+		#logo {
+			width: 75px;
+		}
+
+		#sidebar {
+			overflow-x: hidden;
+		}
+
+		#sidebar::-webkit-scrollbar {
+			width: 4px;
+		}
+
+		#sidebar::-webkit-scrollbar-track,
+		#sidebar::-webkit-scrollbar-thumb {
+			background-color: transparent;
+		}
+
+		#sidebar:hover::-webkit-scrollbar-thumb {
+			background-color: #b8c2cc;
+			border-radius: 2px;
+		}
+
+		#sidebar-parent {
+			width: 75px;
+			top: 4rem;
+		}
+
+		#content {
+			margin-left: 75px;
+			padding-top: 85px;
+		}
+	</style>
+</head>
+<body class="bg-grey-lighter font-sans font-normal text-black leading-normal">
+
+	<!-- <div class="w-64 bg-white mx-auto mt-8 p-4 shadow rounded">
+		<a class="px-6 py-2 border border-purple rounded text-xs text-purple uppercase w-full block no-underline text-center" href="">
+			All Locations
+		</a>
+
+		<ul class="list-reset">
+			<li><a class="no-underline" href="">Heights</a></li>
+			<li><a class="no-underline" href="">Galleria</a></li>
+			<li><a class="no-underline" href="">Spring</a></li>
+			<li><a class="no-underline" href="">Oak Forest</a></li>
+		</ul>
+	</div> -->
+
+	<div class="w-64 mx-auto mt-8 shadow">
+		<a class="no-underline flex items-center justify-center bg-white text-grey-darker text-sm py-4 hover:bg-grey-lightest" href="">
+			<span class="w-2 h-2 block bg-green rounded-full mr-4"></span>
+			<span class="mr-4">Messenger</span>
+			<span class="bg-red text-white rounded-full block px-2 mr-2 text-xs font-semibold">2</span>
+			<i data-feather="chevron-down"></i>
+		</a>
+
+		<ul class="list-reset">
+			<li>
+				<a class="flex items-center px-6 py-3 no-underline bg-grey-lightest text-grey-darker text-xs hover:bg-grey-lighter" href="">
+					<span class="w-4 h-4 rounded-full bg-grey block mr-4"></span>
+					<span class="mr-4">Mesasix Admin</span>
+					<span class="bg-red text-white rounded-full block px-2 text-xs font-semibold">2</span>
+				</a>
+			</li>
+			<li>
+				<a class="flex items-center px-6 py-3 no-underline bg-grey-lightest text-grey-darker text-xs hover:bg-grey-lighter" href="">
+					<span class="w-4 h-4 rounded-full bg-grey block mr-4"></span>
+					<span class="mr-4">Justin Carroll</span>
+				</a>
+			</li>
+			<li>
+				<a class="flex items-center px-6 py-3 no-underline bg-grey-lightest text-grey-darker text-xs hover:bg-grey-lighter" href="">
+					<span class="w-4 h-4 rounded-full bg-grey block mr-4"></span>
+					<span class="mr-4">Dembpaylaga</span>
+				</a>
+			</li>
+			<li>
+				<a class="flex items-center px-6 py-3 no-underline bg-grey-lightest text-grey-darker text-xs hover:bg-grey-lighter" href="">
+					<span class="w-4 h-4 rounded-full bg-grey block mr-4"></span>
+					<span class="mr-4">LBunch</span>
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace();
+	</script>
+</body>
+</html>
