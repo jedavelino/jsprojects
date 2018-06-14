@@ -9,15 +9,16 @@
 </head>
 <body class="bg-grey-lighter font-sans font-normal text-black leading-normal">
 
-	<div class="w-64 mx-auto mt-8 shadow">
-		<a class="no-underline flex items-center justify-center bg-white text-grey-darker text-sm py-4 hover:bg-grey-lightest" href="">
+	<div class="w-64 mx-auto mt-8 shadow" id="app">
+
+		<button class="no-underline flex items-center justify-center bg-white text-grey-darker text-sm py-4 hover:bg-grey-lightest w-full" @click="seen = !seen">
 			<span class="w-2 h-2 block bg-green rounded-full mr-4"></span>
 			<span class="mr-4">Messenger</span>
-			<span class="bg-red text-white rounded-full block px-2 mr-2 text-xs font-semibold">2</span>
+			<span class="bg-red text-white rounded-full block px-2 py-1 mr-2 text-xs font-semibold">2</span>
 			<i data-feather="chevron-down"></i>
-		</a>
+		</button>
 
-		<ul class="list-reset">
+		<ul class="list-reset" v-if="!seen">
 			<li>
 				<a class="flex items-center px-6 py-3 no-underline bg-grey-lightest text-grey-darker text-xs hover:bg-grey-lighter" href="">
 					<span class="w-4 h-4 rounded-full bg-grey block mr-4"></span>
@@ -45,9 +46,17 @@
 			</li>
 		</ul>
 	</div>
-
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
 	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				seen: true
+			}
+		});
+
 		feather.replace();
 	</script>
 </body>
