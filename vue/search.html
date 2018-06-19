@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+	<style>
+		input + label {
+			cursor: text;
+			transition: .3s;
+		}
+
+		input:focus + label {
+			transform: translateY(-20px);
+			transform-origin: 0 0;
+			font-size: 10px;
+		}
+	</style>
+</head>
+<body class="bg-grey-lighter font-sans font-normal text-black leading-normal">
+
+	<div class="w-64 mx-auto mt-8 shadow bg-white p-4 rounded" id="app">
+
+		<div class="flex items-center border-b border-b-1 border-grey py-1 text-sm relative my-3">
+			<input ref="search" class="appearance-none bg-transparent border-none w-full" id="search" type="search">
+			<label class="absolute w-full" for="search">Search for something</label>
+		</div>
+
+	</div>
+
+	<script>
+		var app = new Vue({
+			el: '#app',
+			data: {
+				seen: true,
+				// isActive: false
+			}
+		});
+
+		feather.replace();
+	</script>
+</body>
+</html>
