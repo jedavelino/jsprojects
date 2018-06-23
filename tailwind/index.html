@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+	<style>
+		#logo {
+			width: 75px;
+		}
+
+		#sidebar {
+			overflow-x: hidden;
+		}
+
+		#sidebar::-webkit-scrollbar {
+			width: 4px;
+		}
+
+		#sidebar::-webkit-scrollbar-track,
+		#sidebar::-webkit-scrollbar-thumb {
+			background-color: transparent;
+		}
+
+		#sidebar:hover::-webkit-scrollbar-thumb {
+			background-color: #b8c2cc;
+			border-radius: 2px;
+		}
+
+		#sidebar-parent {
+			width: 75px;
+			top: 4rem;
+		}
+
+		#content {
+			margin-left: 75px;
+			padding-top: 85px;
+		}
+	</style>
+</head>
+<body class="bg-grey-light font-sans font-normal text-black leading-normal">
+
+	<!-- Header -->
+	<div class="flex justify-between bg-white border-b border-grey-lighter fixed pin-t pin-x z-50 h-16 items-stretch">
+		<div class="flex items-center">
+			<a class="flex items-center justify-center no-underline text-indigo-dark hover:text-indigo-darker mr-8" href="" id="logo">
+				<i data-feather="command"></i>
+			</a>
+			<form>
+				<div class="flex items-center border-b border-grey-dark w-64">
+					<button class="flex-no-shrink border-transparent text-grey-dark hover:text-grey-darker text-sm mr-3" type="button"><i data-feather="search"></i></button>
+					<input class="appearance-none bg-transparent border-none text-sm w-full text-grey-dark py-1 leading-tight" type="search" placeholder="Search" aria-label="Search">
+				</div>
+			</form>
+		</div>
+
+		<div class="flex">
+			<a class="flex items-center no-underline text-indigo-dark text-sm px-4 border-l border-grey-light" href="">
+				<i data-feather="users"></i>
+			</a>
+			<a class="flex items-center no-underline text-grey-dark text-sm px-4 border-l border-grey-light" href="">
+				<span class="block w-2 h-2 bg-green rounded-full mr-2"></span>
+				<span class="mr-2">Messenger</span>
+				<span class="bg-red text-white text-xs font-semibold py-1 px-2 rounded-lg">5</span>
+			</a>
+			<a class="flex items-center no-underline text-grey-dark text-sm px-4 border-l border-grey-light" href="">
+				<span class="mr-2">Hello, Murakami</span>
+				<div class="relative">
+					<span class="block w-6 h-6 bg-grey-dark rounded-full bg-no-repeat bg-cover" style="background-image: url(images/1525189887-61450.png);"></span>
+					<span class="block absolute pin-r pin-b w-3 h-3 bg-indigo-dark rounded-full"></span>
+				</div>
+			</a>
+		</div>
+	</div>
+	<!-- // Header -->
+
+	<!-- Sidenav -->
+	<div class="fixed pin-t pin-l pin-b z-40" id="sidebar-parent">
+		<ul class="list-reset w-full text-center text-xs h-full overflow-y-auto" id="sidebar">
+			<li class="py-3 bg-white"><a class="px-2 text-indigo no-underline block border-r-4 border-indigo hover:text-indigo-dark hover:border-indigo-dark" href="#">
+				<i data-feather="grid"></i>
+				<div class="mt-1">Grid</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="pie-chart"></i>
+				<div class="mt-1">Pie Chart</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="users"></i>
+				<div class="mt-1">Users</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="terminal"></i>
+				<div class="mt-1">Terminal</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="truck"></i>
+				<div class="mt-1">Truck</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="shopping-cart"></i>
+				<div class="mt-1">Cart</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="settings"></i>
+				<div class="mt-1">Settings</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="share-2"></i>
+				<div class="mt-1">Share</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="printer"></i>
+				<div class="mt-1">Printer</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="rss"></i>
+				<div class="mt-1">RSS</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="package"></i>
+				<div class="mt-1">Package</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="message-circle"></i>
+				<div class="mt-1">Message</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="film"></i>
+				<div class="mt-1">Film</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="database"></i>
+				<div class="mt-1">Database</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="command"></i>
+				<div class="mt-1">Command</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="cast"></i>
+				<div class="mt-1">Cast</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="aperture"></i>
+				<div class="mt-1">Aperture</div>
+			</a></li>
+		</ul>
+	</div>
+	<!-- // Sidenav -->
+
+	<!-- Content -->
+	<div class="px-4 py-4" id="content">
+		<div class="flex content-center flex-wrap -mx-4">
+			<div class="w-1/4 px-4 mb-8">
+				<div class="shadow-md bg-white rounded overflow-hidden min-h-full">
+					<img class="w-full" src="images/pexels-photo-539711.jpeg" alt="Lorem ipsum dolor sit">
+					<div class="p-4 font-sans">
+						<h3 class="text-xl mb-3">Lorem ipsum dolor sit</h3>
+						<p class="text-sm leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam excepturi optio maxime atque unde illum dolore exercitationem, in voluptate inventore.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-1/4 px-4 mb-8">
+				<div class="shadow-md bg-white rounded overflow-hidden min-h-full">
+					<img class="w-full" src="images/pexels-photo-1146238.jpeg" alt="Lorem ipsum dolor">
+					<div class="p-4 font-sans">
+						<h3 class="text-xl mb-3">Lorem ipsum dolor</h3>
+						<p class="text-sm leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quos, labore distinctio vitae alias cupiditate fugit tempora recusandae aperiam perspiciatis laudantium accusamus, praesentium. Aut, eveniet laborum cumque, quaerat accusantium nostrum.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-1/4 px-4 mb-8">
+				<div class="shadow-md bg-white rounded overflow-hidden min-h-full">
+					<img class="w-full" src="images/pexels-photo-1146345.jpeg" alt="Adipisicing elit">
+					<div class="p-4 font-sans">
+						<h3 class="text-xl mb-3">Adipisicing elit</h3>
+						<p class="text-sm leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, deleniti!</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-1/4 px-4 mb-8">
+				<div class="shadow-md bg-white rounded overflow-hidden min-h-full">
+					<img class="w-full" src="images/pexels-photo-539711.jpeg" alt="Sint tempore officia">
+					<div class="p-4 font-sans">
+						<h3 class="text-xl mb-3">Sint tempore officia</h3>
+						<p class="text-sm leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint tempore officia suscipit perferendis sapiente odit nihil dolorem?</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-1/4 px-4 mb-8">
+				<div class="shadow-md bg-white rounded overflow-hidden min-h-full">
+					<img class="w-full" src="images/pexels-photo-935959.jpeg" alt="Sapiente odit nihil">
+					<div class="p-4 font-sans">
+						<h3 class="text-xl mb-3">Sapiente odit nihil</h3>
+						<p class="text-sm leading-normal">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel ipsum, esse suscipit quae dolorem. Consectetur pariatur ratione aliquid eos culpa, numquam quas vero dolorum hic!</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="w-1/4 px-4 mb-8">
+				<div class="flex justify-center rounded bg-transparent border border-dashed border-grey-dark overflow-hidden min-h-full">
+					<div class="self-center">
+						<div class="w-16 h-16 border border-grey-dark inline-block rounded-full mb-4"></div>
+						<p class="text-grey-dark">Add Post</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- // Content -->
+	
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace();
+	</script>
+</body>
+</html>

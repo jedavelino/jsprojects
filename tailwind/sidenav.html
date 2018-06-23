@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css">
+	<style>
+		#sidebar {
+			overflow-x: hidden;
+		}
+
+		#sidebar::-webkit-scrollbar {
+			width: 4px;
+		}
+
+		#sidebar::-webkit-scrollbar-track,
+		#sidebar::-webkit-scrollbar-thumb {
+			background-color: transparent;
+		}
+
+		#sidebar:hover::-webkit-scrollbar-thumb {
+			background-color: #b8c2cc;
+			border-radius: 2px;
+		}
+
+		#sidebar-parent {
+			width: 75px;
+		}
+	</style>
+</head>
+<body class="bg-grey-light">
+	
+	<div class="fixed pin-t pin-l pin-b" id="sidebar-parent">
+		<ul class="list-reset w-full text-center text-xs font-sans h-full overflow-y-auto" id="sidebar">
+			<li class="py-3 bg-white"><a class="px-2 text-indigo no-underline block border-r-4 border-indigo hover:text-indigo-dark hover:border-indigo-dark" href="#">
+				<i data-feather="grid"></i>
+				<div class="mt-1">Grid</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="pie-chart"></i>
+				<div class="mt-1">Pie Chart</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="users"></i>
+				<div class="mt-1">Users</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="terminal"></i>
+				<div class="mt-1">Terminal</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="truck"></i>
+				<div class="mt-1">Truck</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="shopping-cart"></i>
+				<div class="mt-1">Cart</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="settings"></i>
+				<div class="mt-1">Settings</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="share-2"></i>
+				<div class="mt-1">Share</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="printer"></i>
+				<div class="mt-1">Printer</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="rss"></i>
+				<div class="mt-1">RSS</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="package"></i>
+				<div class="mt-1">Package</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="message-circle"></i>
+				<div class="mt-1">Message</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="film"></i>
+				<div class="mt-1">Film</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="database"></i>
+				<div class="mt-1">Database</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="command"></i>
+				<div class="mt-1">Command</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="cast"></i>
+				<div class="mt-1">Cast</div>
+			</a></li>
+			<li class="py-3 bg-white"><a class="px-2 text-grey-darker no-underline block hover:text-black" href="#">
+				<i data-feather="aperture"></i>
+				<div class="mt-1">Aperture</div>
+			</a></li>
+		</ul>
+	</div>
+	
+	<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+	<script>
+		feather.replace();
+	</script>
+</body>
+</html>
